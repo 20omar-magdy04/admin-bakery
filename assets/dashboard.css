@@ -6,7 +6,7 @@ body {
     135deg,
     #f3e5ab,
     #f7c4b1
-  ); /* Light, warm, bakery-inspired gradient */
+  ); 
 }
 
 h3 {
@@ -47,17 +47,17 @@ table td {
 }
 
 table th {
-  background-color: #d86b3c; /* Warm bakery color */
+  background-color: #d86b3c; 
   color: white;
   font-weight: bold;
 }
 
 table tr:nth-child(even) {
-  background-color: #f8e4d9; /* Soft peach color for even rows */
+  background-color: #f8e4d9; 
 }
 
 table tr:hover {
-  background-color: #f1d1c1; /* Subtle hover effect */
+  background-color: #f1d1c1; 
 }
 
 form {
@@ -75,7 +75,7 @@ button {
   font-family: "Josefin Sans", serif;
   font-size: 15px;
   border-radius: 5px;
-  border: 1px solid #f1c0a5; /* Light peachy color */
+  border: 1px solid #f1c0a5;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -86,13 +86,13 @@ button {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #d86b3c; /* Highlight with warm bakery brown on focus */
-  box-shadow: 0 0 10px rgba(216, 107, 60, 0.5); /* Subtle glowing effect */
+  border-color: #d86b3c; /* brown on focus */
+  box-shadow: 0 0 10px rgba(216, 107, 60, 0.5);
   outline: none;
 }
 
 button {
-  background-color: #d86b3c; /* Warm bakery color */
+  background-color: #d86b3c;
   color: white;
   border: none;
   cursor: pointer;
@@ -102,7 +102,7 @@ button {
 }
 
 button:hover {
-  background-color: #c45829; /* Slightly darker warm color on hover */
+  background-color: #c45829;
   transform: scale(1.05);
 }
 
@@ -117,7 +117,7 @@ button:active {
 
 .logout a {
   font-size: 1.1em;
-  color: #d86b3c; /* Warm bakery color for links */
+  color: #d86b3c; 
   text-decoration: none;
   font-weight: bold;
 }
