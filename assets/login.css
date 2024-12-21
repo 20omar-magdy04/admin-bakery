@@ -6,7 +6,7 @@ body {
     135deg,
     #fbe8a6,
     #f4c2b2
-  ); /* Soft bakery-inspired gradient */
+  ); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ body {
 
 h1 {
   font-size: 2.5em;
-  color: #d86b3c; /* Warm bakery color */
+  color: #d86b3c; 
   margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -58,7 +58,7 @@ button {
   padding: 12px;
   font-size: 1.1em;
   border-radius: 5px;
-  border: 1px solid #f3c5c1; /* Light bakery color */
+  border: 1px solid #f3c5c1; 
   transition: all 0.3s ease;
 }
 
@@ -71,7 +71,7 @@ select:focus {
 }
 
 button {
-  background-color: #d86b3c; /* Warm bakery color */
+  background-color: #d86b3c;  
   color: white;
   border: none;
   cursor: pointer;
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: #c45829; /* Darker warm color for hover effect */
+  background-color: #c45829; 
   transform: scale(1.05);
 }
 
