@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Format the image names into the correct path format
             $imagePaths = array_map(function($imageName) {
-                return './assests/images/products/' . $imageName;  // Prepend the image directory to the image name
+                return './assests/images/products/' . $imageName; 
             }, $imageNames);
 
             // Convert the array of image paths into a JSON string, without escaping the slashes
@@ -28,14 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             addProduct($conn, $_POST['name'], $_POST['description'], $_POST['price'], $_POST['category_id'], $_POST['quantity'], $image);
         } elseif ($_POST['action'] === 'update') {
-            // Handle image for update (same logic as add)
             $imageNames = isset($_POST['image']) ? (is_array($_POST['image']) ? $_POST['image'] : [$_POST['image']]) : [];
-
-            // Format the image names into the correct path format
             $imagePaths = array_map(function($imageName) {
-                return './assests/images/products/' . $imageName;  // Prepend the image directory to the image name
+                return './assests/images/products/' . $imageName;
             }, $imageNames);
-
             // Convert the array of image paths into a JSON string, without escaping the slashes
             $image = json_encode($imagePaths, JSON_UNESCAPED_SLASHES);
 
@@ -78,7 +74,7 @@ if (isset($_POST['logout'])) {
             <input type="number" name="price" placeholder="Product Price" step="0.01" required>
             <input type="number" name="quantity" placeholder="Product Quantity" required>
 
-            <!-- Image Name Input (multiple images can be entered) -->
+            <!-- Image Name Input -->
             <input type="text" name="image[]" placeholder="First Image Name" required>
             <input type="text" name="image[]" placeholder="Second Image Name" required>
 
